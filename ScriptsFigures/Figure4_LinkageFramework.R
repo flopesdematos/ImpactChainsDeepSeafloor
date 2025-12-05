@@ -15,6 +15,9 @@ library(tidyverse)
 library(ggpp)
 library(ggtext)
 
+# Define working directory
+setwd("DEFINE_PATH")
+
 # Example data structure -------------------------------------------------------
 # This tibble mimics a 1-to-1 linkage dataset between:
 #   Primary Activity → Grouped Code → Pressure Category → Pressure
@@ -156,3 +159,7 @@ scale_x_continuous(
     plot.margin     = margin(0.1, 0.5, 0.1, 0.1, "cm"),
     axis.text.x     = element_text(size = 13, face = "bold")
   )
+
+# Export figure
+ggsave("Figure4_LinkageFramework.png", width = 12, height = 7, dpi = 300)
+
