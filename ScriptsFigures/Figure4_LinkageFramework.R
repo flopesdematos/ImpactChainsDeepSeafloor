@@ -21,7 +21,7 @@ setwd("DEFINE_PATH")
 # Example data structure -------------------------------------------------------
 # This tibble mimics a 1-to-1 linkage dataset between:
 #   Primary Activity → Grouped Code → Pressure Category → Pressure
-# and aesthetic attributes controlling color/alpha/font.
+# and aesthetic attributes controlling color/alpha/font. NOTE: The linkages are not meaningful and are completely random!
 df1to1 <- tibble(
   `Primary Activity Type` = sample(c("Exogenous/Unmanaged (e.g. due to climate change)", "Fishing", "Tourism/ Recreation and Non-Commercial Harvesting"), 30, replace = TRUE),
   `Grouped Code` = sample(c("Emission", "Litter", "Fish_Bent", "Climate", "Cruise"), 30, replace = TRUE),
